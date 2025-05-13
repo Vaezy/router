@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router";
-import Layout from "./components/Layout";
+import { Layout } from "./components/Layout";
 import { Category } from "./pages/Category";
-import Home from "./pages/Home";
+import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 
-function App() {
+export const App = () => {
   return (
     <Routes>
       <Route element={<Layout />}>
@@ -14,6 +14,4 @@ function App() {
       </Route>
     </Routes>
   );
-}
-
-export default App;
+};
